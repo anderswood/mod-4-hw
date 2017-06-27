@@ -34,23 +34,23 @@ makeAllCaps(inputArr)
   .catch(error => console.log(error))
 
 
-// //EXERCISE 1
-// //*** from: https://gist.github.com/robbiejaeger/dc8f55c1f9462741090862f736b82cab ***//
-// const testNum = (num) => {
-//   return new Promise((resolve, reject) => {
-//     if (num > 10) {
-//       resolve(num + " is greater than 10, you're wikid smaht")
-//     }
-//     else {
-//       reject(num + ' is less than 10, go home')
-//     }
-//   })
-//
-// }
-//
-// testNum(12)
-//   .then(result => console.log(result))
-//   .catch(error => console.log(error))
+//EXERCISE 1
+//*** from: https://gist.github.com/robbiejaeger/dc8f55c1f9462741090862f736b82cab ***//
+const testNum = (num) => {
+  return new Promise((resolve, reject) => {
+    if (num > 10) {
+      resolve(num + " is greater than 10, you're wikid smaht")
+    }
+    else {
+      reject(num + ' is less than 10, go home')
+    }
+  })
+
+}
+
+testNum(12)
+  .then(result => console.log(result))
+  .catch(error => console.log(error))
 
 // //*** from: https://davidwalsh.name/promises ***//
 // let req1 = new Promise((resolve, reject) => {
